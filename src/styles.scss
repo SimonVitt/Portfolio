@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/fonts.css';
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #141D2F;
+    width: 100vw;
+    max-width: 100%;
+    color: white;
+}
+
+h2 {
+    font-size: 90px;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    width: 140px;
+    height: 58px !important;
+    background-color: #00BEE8 !important;
+    color: white !important;
+    font-weight: 300 !important;
+    margin-top: 42px;
+    font-size: 20px !important;
+    border-radius: 10px !important;
+
+    cursor: pointer;
+
+    &:hover{
+        filter: brightness(0.9);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}

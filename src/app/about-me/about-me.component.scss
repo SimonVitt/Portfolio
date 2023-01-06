@@ -1,0 +1,60 @@
+.about-me-container {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.about-me-content {
+    padding-left: 5vw;
+    width: 40%;
+}
+
+.container-information {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    p {
+        width: 80%;
+    }
+}
+
+.icon-container-abme {
+    display: flex;
+    justify-content: center;
+    width: 20% !important;
+}
+
+.about-me-picture {
+    padding-right: 5vw;
+    height: 650px;
+}
+
+.background-abme {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.diagonal-pic {
+    position: absolute;
+    top: 74%;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1550px) {
+    .diagonal-pic {
+        top: 78%;
+    }
+}

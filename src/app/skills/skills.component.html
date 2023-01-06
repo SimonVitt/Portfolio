@@ -1,0 +1,27 @@
+<div class="skills-container">
+    <div class="icon-container-skills">
+        <div *ngFor="let skill of skills; index as i;" class="single-skill">
+            <img src="{{ skills_images[i] }}">
+            <span>{{ skills[i] }}</span>
+        </div>
+        <div class="single-skill">
+            <img src="assets/img/icons/java.svg" style="filter: brightness(0) invert(1); width: 50px;">
+            <span>Java</span>
+        </div>
+        <div class="single-skill">
+            <img src="assets/img/icons/android.png" style="filter: brightness(0) invert(1); width: 60px;">
+            <span>Android Studio</span>
+        </div>
+    </div>
+    <div class="text-container-skills">
+        <div>
+            <h2>Skills</h2>
+            <img src="assets/img/greenline.svg">
+        </div>
+        <p>I have grown my frontend developments skills that have allowed me to create different real projects.</p>
+        <button mat-raised-button style="width: 180px;">Get in touch</button>
+    </div>
+    <div class="background-skills">
+        <img src="assets/img/background/greenbg2.svg">
+    </div>
+</div>

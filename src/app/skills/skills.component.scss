@@ -1,0 +1,55 @@
+.skills-container {
+    padding-top: 180px;
+    min-height: 50vh;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.icon-container-skills {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.single-skill {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 40px;
+
+    span {
+        margin-top: 4px;
+        text-align: center;
+    }
+}
+
+.text-container-skills {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    overflow-x: hidden;
+
+    p{
+        margin-right: 5vw;
+    }
+
+    h2 {
+        margin: 0;
+        margin-right: 16px;
+    }
+
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.background-skills{
+    position: absolute;
+    right: 0;
+    top: 60vh;
+}

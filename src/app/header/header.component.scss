@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    height: 14vh;
+    font-size: 40px;
+
+    div{
+        font-size: 23px;
+        width: 324px;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            cursor: pointer;
+            
+            &:hover{
+                filter: brightness(0.9);
+            }
+        }
+    }
+}
