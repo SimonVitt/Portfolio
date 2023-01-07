@@ -1,7 +1,8 @@
-<app-header></app-header>
+<app-header (changeMenu)="menuChanges($event)"></app-header>
 <app-i-am-page></app-i-am-page>
 <app-about-me></app-about-me>
 <app-skills></app-skills>
 <app-projects></app-projects>
 <app-contact></app-contact>
 <app-footer></app-footer>
+<app-mobile-menu *ngIf="showMenu" [showMenu]="showMenu"></app-mobile-menu>

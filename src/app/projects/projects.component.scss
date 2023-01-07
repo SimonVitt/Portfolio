@@ -25,6 +25,19 @@ h3 {
     }
 }
 
+.headline-portfolio {
+    display: flex;
+
+    img {
+        width: 3vw;
+    }
+
+    h2 {
+        margin: 0;
+        margin-left: 2vw;
+    }
+}
+
 .project-img {
     display: flex;
     justify-content: center;
@@ -34,6 +47,10 @@ h3 {
     height: 400px;
     box-sizing: border-box;
     overflow-y: clip;
+}
+
+.span-top-proj {
+    margin-left: 5vw;
 }
 
 .project-info {
@@ -56,23 +73,24 @@ h3 {
 
 .button-test {
     background-color: #4B47FF !important;
-    &:hover{
+
+    &:hover {
         transform: scale(1.0);
         background-color: #00BEE8 !important;
     }
 }
 
-.button-github{
+.button-github {
     border: 1px solid #00BEE8;
     background-color: #141D2F !important;
 
-    &:hover{
+    &:hover {
         transform: scale(1.0);
         background-color: #00BEE8 !important;
     }
 }
 
-.bg1-projects{
+.bg1-projects {
     z-index: -1;
     position: absolute;
     left: -700px;
@@ -81,10 +99,140 @@ h3 {
 
 }
 
-.bg2-projects{
+.big-line-port {
+    display: none;
+}
+
+.bg2-projects {
+    z-index: -1;
     position: absolute;
     right: -700px;
     top: 50%;
     transform: rotate(180deg);
 
+}
+
+@media (max-width: 1170px) {
+    .project img {
+        height: 372px;
+    }
+
+    .project-info div {
+        width: 100%;
+    }
+}
+
+@media (max-width:920px) {
+    .project-info span {
+        font-size: 17px;
+    }
+
+    .button-github {
+        width: 100px;
+        margin-top: 24px;
+    }
+
+    .button-test {
+        width: 100px;
+        margin-top: 24px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .project {
+        height: 300px !important;
+        overflow-y: clip;
+    }
+
+    .project img {
+        height: 320px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+
+        span {
+            text-align: center;
+        }
+    }
+
+    .project {
+        flex-direction: column;
+        height: unset !important;
+    }
+
+    .projects{
+        height: 1755px;
+    }
+
+    .polloloco {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .position-reltive-closer {
+        position: relative;
+        top: -100px;
+    }
+
+    .position-reltive-closer2 {
+        position: relative;
+        top: -200px;
+    }
+
+    .project-img {
+        width: 100%;
+        padding-top: 0;
+
+        img {
+            max-width: 372px;
+        }
+    }
+
+    .project-info {
+        width: 100%;
+        position: relative;
+        top: -110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 440px;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .span-top-proj {
+        margin-left: 0;
+        padding: 0 5vw;
+        max-width: 560px;
+    }
+
+    .big-line-port {
+        display: unset;
+        width: 48px !important;
+    }
+
+    .headline-portfolio {
+        width: 100%;
+        justify-content: end;
+
+        img {
+            width: 34px;
+        }
+
+        h2 {
+            margin: 0 2vw;
+        }
+    }
 }

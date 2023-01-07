@@ -1,7 +1,11 @@
 .contact-container{
     padding-bottom: 152px;
     position: relative;
-    overflow-y: clip;
+    overflow: clip;
+}
+
+.contact-question{
+    width: 48%;
 }
 
 .heading-contacts {
@@ -27,6 +31,10 @@
     padding-top: 48px;
 
     p {
+        margin-left: 5vw;
+    }
+
+    span{
         margin-left: 5vw;
     }
 }
@@ -61,6 +69,7 @@
         padding: 8px;
         border-radius: 8px;
         font-size: 16px;
+        box-sizing: border-box;
 
         &:hover{
             border-color: #00BEE8;
@@ -83,6 +92,7 @@
         resize: none;
         font-size: 16px;
         font-family: 'Poppins';
+        box-sizing: border-box;
 
         &:hover{
             border-color: #00BEE8;
@@ -114,5 +124,113 @@
 
     &:hover{
         filter: invert(54%) sepia(96%) saturate(1256%) hue-rotate(149deg) brightness(96%) contrast(101%);
+    }
+}
+
+.submit-btn{
+    width: 220px !important;
+}
+
+@media (max-width: 1170px){
+    h3{
+        font-size: 21px !important;
+    }
+
+    .contact-form{
+        width: 45%;
+    }
+
+    .heading-contacts{
+        img{
+            top: 53px;
+            right: -33px;
+        }
+    }
+
+    .contact-container{
+        padding-bottom: 32px;
+    }
+
+    .img-up{
+        right: unset;
+        left: 5vw;
+        bottom: 28px;
+    }
+
+    .contact-form input{
+        font-size: 14px;
+    }
+
+    .contact-form textarea{
+        font-size: 14px;
+    }
+
+    .submit-btn{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 920px){
+    .heading-contacts img{
+        top: 45px;
+    }
+}
+
+@media (max-width: 720px){
+    .contact-details-container{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 22px;
+    }
+
+    .contact-question{
+        width: 100%;
+        padding: 0 5vw;
+    }
+
+    .contact-form{
+        width: 95%;
+        padding-left: 5vw;
+        padding-top: 42px;
+        box-sizing: border-box;
+        padding-bottom: 60px;
+    }
+
+    .heading-contacts img{
+        top: 29px;
+        right: -266px;
+        width: 320px;
+    }
+
+    .contact-question{
+        box-sizing: border-box;
+        p{
+            margin: 0;
+        }
+        span{
+            margin: 0;
+            font-size: 13px;
+        }
+    }
+
+    .headlinequestion-contact{
+        img{
+            display: none;
+        }
+    }
+
+    h3{
+        font-size: 20px !important;
+        margin-bottom: 6px !important;
+        margin-left: 0 !important;
+    }
+
+    .submit-btn{
+        width: 160px !important;
+    }
+
+    .img-up{
+        left: unset;
+        right: 5vw;
     }
 }

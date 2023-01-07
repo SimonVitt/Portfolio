@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  public showMenu: boolean = false;
+
+  menuChanges(opened: boolean){
+    this.showMenu = opened;
+  } 
 }

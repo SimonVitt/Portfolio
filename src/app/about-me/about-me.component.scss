@@ -4,6 +4,7 @@
     justify-content: space-between;
     position: relative;
     box-sizing: border-box;
+    overflow-x: clip;
 
     h2 {
         margin: 0;
@@ -30,9 +31,10 @@
     justify-content: center;
     width: 20% !important;
 
-    img{
+    img {
         filter: invert(54%) sepia(96%) saturate(1256%) hue-rotate(149deg) brightness(96%) contrast(101%);
-        &:hover{
+
+        &:hover {
             transition: transform 0.125s;
             transform: scale(1.2);
         }
@@ -64,5 +66,90 @@
 @media (max-width: 1550px) {
     .diagonal-pic {
         top: 78%;
+    }
+}
+
+@media (max-width: 1170px) {
+
+    .about-me-content {
+        width: 50%;
+    }
+
+    .about-me-picture {
+        height: 482px;
+
+        img {
+            height: 482px !important;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .diagonal-pic {
+        top: 80%;
+    }
+
+    .about-me-container {
+        padding-top: 0;
+    }
+
+    .about-me-content {
+        padding-top: 60px;
+    }
+
+    .about-me-picture {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 830px) {
+    .about-me-picture {
+        padding-top: 206px;
+
+        img {
+            height: 350px !important;
+        }
+    }
+
+    .diagonal-pic {
+        top: 68%;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-me-container {
+        flex-direction: column-reverse;
+    }
+
+    .about-me-picture {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .diagonal-pic {
+        top: 22%;
+        width: 100%;
+        overflow-x: clip;
+
+        img {
+            width: 200%;
+        }
+    }
+
+    .about-me-content {
+        padding-top: 0;
+        padding-right: 5vw;
+        width: 100%;
+        z-index: 3;
+        position: relative;
+        top: -120px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 594px){
+    .diagonal-pic{
+        top: 26%;
     }
 }

@@ -1,5 +1,5 @@
 .skills-container {
-    padding-top: 180px;
+    padding-top: 140px;
     min-height: 50vh;
     padding-left: 5%;
     display: flex;
@@ -10,13 +10,15 @@
 }
 
 .icon-container-skills {
+    padding-top: 24px;
     display: flex;
     width: 50%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .single-skill {
-    width: 100px;
+    width: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,8 +29,8 @@
         text-align: center;
     }
 
-    img{
-        &:hover{
+    img {
+        &:hover {
             transition: transform 0.05s;
             transform: translateY(-10px);
         }
@@ -41,7 +43,7 @@
     width: 36%;
     overflow-x: hidden;
 
-    p{
+    p {
         margin-right: 5vw;
     }
 
@@ -50,22 +52,89 @@
         margin-right: 16px;
     }
 
-    div{
+    div {
         display: flex;
         justify-content: space-between;
     }
 }
 
-.background-skills{
+.background-skills {
     position: absolute;
     right: -200px;
     top: 52vh;
+    z-index: -1;
 }
 
-.btn-skills{
+.btn-skills {
     width: 180px;
     margin-left: 10px;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1) !important;
+    }
+}
+
+.btn-skills-mobile {
+    display: none;
+}
+
+@media (max-width: 1170px) {
+    .single-skill {
+        width: 80px;
+        margin: 15px 17px;
+        font-size: 12px;
+
+        img {
+            height: 50px;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .single-skill {
+        margin: 15px 15px;
+    }
+}
+
+@media (max-width: 830px) {
+    .skills-container {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .skills-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .icon-container-skills {
+        width: 100%;
+        justify-content: center;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+
+    .text-container-skills {
+        width: -webkit-fill-available;
+        padding-left: 5vw;
+
+        img{
+            width: 200px;
+        }
+    }
+
+    .btn-skills {
+        display: none;
+    }
+
+    .btn-skills-mobile {
+        display: unset;
+        width: 140px;
+
+        &:hover {
+            transform: scale(1.1) !important;
+        }
     }
 }
