@@ -26,4 +26,13 @@
     align-items: center;
     width: 180px;
     justify-content: space-between;
+    
+    img{
+        cursor: pointer;
+        
+        &:hover{
+            transition: transform 0.35;
+            transform: scale(1.2);
+        }
+    }
 }

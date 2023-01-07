@@ -37,6 +37,7 @@
     h3 {
         margin: 0;
         margin-left: 2vw;
+        font-size: 28px;
     }
 
     img {
@@ -61,8 +62,13 @@
         border-radius: 8px;
         font-size: 16px;
 
+        &:hover{
+            border-color: #00BEE8;
+        }
+
         &:focus {
             outline: none;
+            border-color: #00BEE8;
         }
     }
 
@@ -78,8 +84,13 @@
         font-size: 16px;
         font-family: 'Poppins';
 
+        &:hover{
+            border-color: #00BEE8;
+        }
+
         &:focus {
             outline: none;
+            border-color: #00BEE8;
         }
     }
 
@@ -90,8 +101,8 @@
 
 .bg-contact{
     position: absolute;
-    top: 20%;
-    right: 0;
+    top: 30%;
+    left: 0;
     z-index: -1;
 }
 
@@ -99,4 +110,9 @@
     position: absolute;
     right: 5vw;
     bottom: 50px;
+    cursor: pointer;
+
+    &:hover{
+        filter: invert(54%) sepia(96%) saturate(1256%) hue-rotate(149deg) brightness(96%) contrast(101%);
+    }
 }

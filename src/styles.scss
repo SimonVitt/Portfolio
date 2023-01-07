@@ -29,8 +29,10 @@ button {
 
     cursor: pointer;
 
-    &:hover{
-        filter: brightness(0.9);
+    &:hover {
+        transition: transform 0.15s;
+        background-color: #4B47FF !important;
+        transform: scale(1.2);
     }
 }
 

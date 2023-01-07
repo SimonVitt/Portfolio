@@ -2,6 +2,7 @@
     padding-bottom: 100px;
     z-index: 2;
     position: relative;
+    overflow-x: clip;
 }
 
 .projects {
@@ -55,9 +56,35 @@ h3 {
 
 .button-test {
     background-color: #4B47FF !important;
+    &:hover{
+        transform: scale(1.0);
+        background-color: #00BEE8 !important;
+    }
 }
 
 .button-github{
     border: 1px solid #00BEE8;
     background-color: #141D2F !important;
+
+    &:hover{
+        transform: scale(1.0);
+        background-color: #00BEE8 !important;
+    }
+}
+
+.bg1-projects{
+    z-index: -1;
+    position: absolute;
+    left: -700px;
+    top: 13%;
+    transform: rotate(90deg);
+
+}
+
+.bg2-projects{
+    position: absolute;
+    right: -700px;
+    top: 50%;
+    transform: rotate(180deg);
+
 }

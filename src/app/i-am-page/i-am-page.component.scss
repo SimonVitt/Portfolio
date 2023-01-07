@@ -1,21 +1,26 @@
 .iam-container {
     position: relative;
-    height: 86vh;
+    height: 100vh;
+    padding-top: 10vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: clip;
+    box-sizing: border-box;
 }
 
-.background-iam {
+.bg1-iam{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
+    top: 10vh;
+    left: -200px;
+}
+
+.bg2-iam{
+    position: absolute;
+    top: 10vh;
+    right: -100px;
 }
 
 .content-container-iam {
@@ -62,6 +67,15 @@
     position: absolute;
     left: 0;
     bottom: 42px;
+
+    img{
+        cursor: pointer;
+        
+        &:hover{
+            transition: transform 0.35;
+            transform: scale(1.2);
+        }
+    }
 }
 
 .scroll-down{
