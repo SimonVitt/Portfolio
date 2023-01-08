@@ -1,5 +1,6 @@
 <div class="skills-container">
-    <button mat-raised-button class="btn-skills-mobile">Get in touch</button>
+    <a href="#contact" style="margin-top: 42px; width: fit-content;"><button mat-raised-button
+            class="btn-skills-mobile">Get in touch</button></a>
     <div class="icon-container-skills">
         <div *ngFor="let skill of skills; index as i;" class="single-skill">
             <img src="{{ skills_images[i] }}">
@@ -19,8 +20,9 @@
             <h2>Skills</h2>
             <img src="assets/img/greenline.svg">
         </div>
-        <span style="margin-right: 5vw;">I have grown my frontend developments skills that have allowed me to create different real projects.</span>
-        <button mat-raised-button class="btn-skills">Get in touch</button>
+        <span style="margin-right: 5vw;">I have grown my frontend developments skills that have allowed me to create
+            different real projects.</span>
+        <a href="#contact" style="margin-top: 42px; width: fit-content; margin-left: 10px;"><button mat-raised-button class="btn-skills">Get in touch</button></a>
     </div>
     <div class="background-skills">
         <img src="assets/img/background/greenbg2.svg">

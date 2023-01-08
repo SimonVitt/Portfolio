@@ -1,9 +1,9 @@
-<div class="container-menu-mobile">
-    <img src="assets/img/close-btn.svg" class="close-btn">
+<div class="container-menu-mobile" [ngClass]="showAnimation ? 'flyIn' : 'flyOut'">
+    <img src="assets/img/close-btn.svg" class="close-btn" (click)="changeMenuFunction()">
     <div class="content-container-menu">
-        <a>About me</a>
-        <a>My skills</a>
-        <a>Portfolio</a>
-        <a>Contact</a>
+        <a href="#about-me" (click)="changeMenuFunction()">About me</a>
+        <a href="#skills" (click)="changeMenuFunction()">My skills</a>
+        <a href="#projects" (click)="changeMenuFunction()">Portfolio</a>
+        <a href="#contact" (click)="changeMenuFunction()">Contact</a>
     </div>
 </div>

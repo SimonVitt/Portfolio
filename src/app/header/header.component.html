@@ -1,13 +1,13 @@
 <div class="header">
-    <div class="logo-topper">
+    <a href="#i-am" class="logo-topper">
         <p>S</p><p style="color: #00BEE8;">i</p><p>mo</p><p style="color: #4B47FF;">n</p><p>&nbsp;V</p><p style="color: #4B47FF;">i</p><p style="color: #00BEE8;">t</p><p>t</p>
-    </div>
+    </a>
     <div class="menu-big">
-        <a>About me</a>
-        <a>Skills</a>
-        <a>Portfolio</a>
+        <a href="#about-me">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Portfolio</a>
     </div>
     <div class="menu-btn">
-        <img src="assets/img/burgermenu.svg" (click)="changeMenuFunction()">
+        <img src="assets/img/burgermenu.svg" (click)="changeMenuFunction()" *ngIf="!showMenu">
     </div>
 </div>

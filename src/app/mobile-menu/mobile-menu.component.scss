@@ -42,4 +42,34 @@
         }
     }
 
+    .flyIn {
+        animation: flyIn;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes flyIn {
+        0% {
+            right: -100%;
+        }
+    
+        100% {
+            right: 0px;
+        }
+    }
+    
+    .flyOut {
+        animation: flyOut;
+        animation-duration: 0.8s;
+    }
+    
+    @keyframes flyOut {
+        0% {
+            right: 0px;
+        }
+    
+        100% {
+            right: -150%;
+        }
+    }
+
 }

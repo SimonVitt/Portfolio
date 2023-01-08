@@ -9,8 +9,18 @@ export class AppComponent {
   title = 'portfolio';
 
   public showMenu: boolean = false;
+  public showAnimation: boolean = false;
 
   menuChanges(opened: boolean){
-    this.showMenu = opened;
+
+    if(opened == false){
+      this.showAnimation = opened;
+      setTimeout(() => {
+        this.showMenu = opened;
+      }, 600)
+    }else{
+      this.showAnimation = opened;
+      this.showMenu = opened;
+    }
   } 
 }

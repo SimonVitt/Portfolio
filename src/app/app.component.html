@@ -1,8 +1,8 @@
-<app-header (changeMenu)="menuChanges($event)"></app-header>
-<app-i-am-page></app-i-am-page>
-<app-about-me></app-about-me>
-<app-skills></app-skills>
-<app-projects></app-projects>
-<app-contact></app-contact>
+<app-header (changeMenu)="menuChanges($event)" [showMenu]="showMenu"></app-header>
+<app-i-am-page id="i-am"></app-i-am-page>
+<app-about-me id="about-me"></app-about-me>
+<app-skills id="skills"></app-skills>
+<app-projects id="projects"></app-projects>
+<app-contact id="contact"></app-contact>
 <app-footer></app-footer>
-<app-mobile-menu *ngIf="showMenu" [showMenu]="showMenu"></app-mobile-menu>
+<app-mobile-menu *ngIf="showMenu" [showAnimation]="showAnimation" (changeMenu)="menuChanges($event)"></app-mobile-menu>

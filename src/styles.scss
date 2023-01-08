@@ -1,5 +1,10 @@
 @import './assets/fonts.css';
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh; 
+}
+
 body {
     margin: 0;
     font-family: 'Poppins';
@@ -62,6 +67,11 @@ button {
     }
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 html,
 body {
     height: 100%;
@@ -118,5 +128,9 @@ body {
 @media (max-width: 720px){
     h2{
         font-size: 40px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 }

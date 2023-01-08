@@ -121,8 +121,13 @@
 }
 
 .btn-iam {
-    margin-top: 30px !important;
+    margin-top: 0 !important;
     width: 200px;
+}
+
+.btn-iam-a{
+    margin-top: 30px !important;
+    width: fit-content;
 }
 
 .arrow-down-iam {
@@ -145,6 +150,11 @@
 
     .btn-iam {
         width: 168px;
+        margin-top: 0 !important;
+    }
+
+    .btn-iam-a{
+        width: fit-content;
         margin-top: 0 !important;
     }
 
@@ -215,6 +225,10 @@
         width: 132px;
     }
 
+    .btn-iam-a{
+        width: fit-content;
+    }
+
     .contact-iam {
         right: 0;
     }
@@ -251,7 +265,7 @@
         top: -21px;
     }
 
-    .btn-iam{
+    .btn-iam-a{
         margin-top: 100px !important;
     }
 }

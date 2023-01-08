@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-menu',
@@ -6,5 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./mobile-menu.component.scss']
 })
 export class MobileMenuComponent {
-  @Input() showMenu: boolean = false;
+  @Input() showAnimation :boolean = false;
+  @Output() changeMenu = new EventEmitter<boolean>();
+
+  changeMenuFunction(){
+    this.changeMenu.emit(false);
+  }
 }

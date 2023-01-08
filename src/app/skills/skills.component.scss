@@ -67,7 +67,7 @@
 
 .btn-skills {
     width: 180px;
-    margin-left: 10px;
+    margin-top: 0;
 
     &:hover {
         transform: scale(1.1) !important;
@@ -132,6 +132,7 @@
     .btn-skills-mobile {
         display: unset;
         width: 140px;
+        margin-top: 0 !important;
 
         &:hover {
             transform: scale(1.1) !important;
