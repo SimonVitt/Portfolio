@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { FlyInLeftDirective } from './directives/fly-in-left.directive';
 import { FlyInRightDirective } from './directives/fly-in-right.directive';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { FlyInRightDirective } from './directives/fly-in-right.directive';
     FooterComponent,
     MobileMenuComponent,
     FlyInLeftDirective,
-    FlyInRightDirective
+    FlyInRightDirective,
+    ImpressumComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
