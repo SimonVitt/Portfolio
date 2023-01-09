@@ -13,6 +13,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import { FlyInLeft } from './directives/fly-in-left.directive';
+
 
 @NgModule({
   declarations: [
@@ -24,13 +26,18 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    FlyInLeft
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    FlyInLeft
+  ],
+  exports[
+    FlyInLeft
   ],
   providers: [],
   bootstrap: [AppComponent]
