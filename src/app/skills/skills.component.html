@@ -1,7 +1,7 @@
 <div class="skills-container">
     <a href="#contact" style="margin-top: 42px; width: fit-content;"><button mat-raised-button
             class="btn-skills-mobile">Get in touch</button></a>
-    <div class="icon-container-skills">
+    <div class="icon-container-skills" appFlyInLeft>
         <div *ngFor="let skill of skills; index as i;" class="single-skill">
             <img src="{{ skills_images[i] }}">
             <span>{{ skills[i] }}</span>
