@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ComponentFactoryResolver, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -12,19 +12,34 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   sending :boolean = false;
   sendSuccess : boolean = false;
+  error : boolean = false;
 
   async sendMail(){
+    this.error = false;
     this.sendSuccess = false;
     this.sending = true;
     let fd = new FormData();
     this.setFormData(fd);
-    await fetch('/send_mail.php', {
-      method: 'POST',
-      body: fd
-    });
+    await this.sendData(fd);
     this.resetInputs();
     this.sending = false;
-    this.sendSuccess = true;
+    if(!this.error){
+      this.sendSuccess = true;
+    }
+  }
+
+  async sendData(fd:FormData){
+    try{
+      let response = await fetch('/send_mail.php', {
+        method: 'POST',
+        body: fd
+      });
+      if(!response.ok){
+        throw await response.json();
+      }
+    }catch(e){
+      this.error = true;
+    }
   }
 
   setFormData(fd: FormData){

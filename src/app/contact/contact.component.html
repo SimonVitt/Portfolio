@@ -18,6 +18,7 @@
             <input placeholder="Your email" name="email" #emailField [disabled]="sending" type="email" required>
             <textarea placeholder="Your message" name="message" #messageField [disabled]="sending" required></textarea>
             <div style="width: 100%;">
+                <p style="color: red; font-size: 11px; margin-left: 12px; margin-top: 12px; margin-bottom: 0;" *ngIf="error">Unable to send message... Try again later!</p>
                 <p style="color: orange; font-size: 11px; margin-left: 12px; margin-top: 12px; margin-bottom: 0;" *ngIf="sending">sending...</p>
                 <p style="color: rgb(74, 209, 74); font-size: 11px; margin-left: 12px; margin-top: 12px; margin-bottom: 0;" *ngIf="sendSuccess">Email send! Thank you :)</p>
             </div>
