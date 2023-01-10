@@ -1,5 +1,5 @@
 .about-me-container {
-    padding-top: 10vh;
+    padding-top: 5vh;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -151,6 +151,7 @@
 
     .about-me-container {
         flex-direction: column-reverse;
+        padding-top: 0;
     }
 
     .about-me-picture {
@@ -171,7 +172,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 370px;
+        top: 294px;
     }
 
     .about-me-content {
@@ -185,7 +186,7 @@
 
 @media (max-width: 600px){
     .diagonal-pic{
-        top: 287px;
+        top: 218px;
     }
 
     .profile-pic-mobile{
@@ -195,7 +196,7 @@
 
 @media (max-width: 510px){
     .diagonal-pic{
-        top: 240px;
+        top: 170px;
     }
 
     .profile-pic-mobile{
@@ -205,17 +206,21 @@
 
 @media (max-width: 440px){
     .diagonal-pic{
-        top: 177px;
+        top: 100px;
     }
 
     .profile-pic-mobile{
         height: 282px;
     }
+
+    .icon-container-abme img{
+        padding-right: 16px;
+    }
 }
 
 @media (max-width: 375px){
     .diagonal-pic{
-        top: 162px;
+        top: 88px;
     }
 
     .profile-pic-mobile{
@@ -225,7 +230,7 @@
 
 @media (max-width: 353px){
     .diagonal-pic{
-        top: 135px;
+        top: 60px;
     }
 
     .profile-pic-mobile{
