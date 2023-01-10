@@ -17,7 +17,7 @@ export class AppComponent {
       this.showAnimation = opened;
       setTimeout(() => {
         this.showMenu = opened;
-      }, 450)
+      }, 200)
     }else{
       this.showAnimation = opened;
       this.showMenu = opened;

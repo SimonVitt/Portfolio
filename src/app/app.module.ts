@@ -17,6 +17,8 @@ import { FlyInLeftDirective } from './directives/fly-in-left.directive';
 import { FlyInRightDirective } from './directives/fly-in-right.directive';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { MainpageComponent } from './mainpage/mainpage.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

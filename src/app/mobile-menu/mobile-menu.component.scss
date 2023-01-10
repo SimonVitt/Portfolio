@@ -44,7 +44,7 @@
 
     .flyIn {
         animation: flyIn;
-        animation-duration: 0.8s;
+        animation-duration: 0.25s;
     }
 
     @keyframes flyIn {
@@ -59,7 +59,7 @@
     
     .flyOut {
         animation: flyOut;
-        animation-duration: 0.5s;
+        animation-duration: 0.25s;
     }
     
     @keyframes flyOut {
