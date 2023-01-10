@@ -13,11 +13,15 @@
                 projects with my work.</p>
             <span>Need a Frontend developer? <strong>Contact me!</strong></span>
         </div>
-        <form class="contact-form" onsubmit="submitForm()" action="https://www.simon-vitt.de/send_mail.php" method="post" appFlyInRight>
-            <input placeholder="Your name" name="name" required>
-            <input placeholder="Your email" name="email" type="email" required>
-            <textarea placeholder="Your message" name="message" required></textarea>
-            <button mat-raised-button type="submit" class="submit-btn">Send message :)</button>
+        <form class="contact-form" (submit)="sendMail()" ngNativeValidate appFlyInRight #myForm>
+            <input placeholder="Your name" name="name" #nameField [disabled]="sending" required>
+            <input placeholder="Your email" name="email" #emailField [disabled]="sending" type="email" required>
+            <textarea placeholder="Your message" name="message" #messageField [disabled]="sending" required></textarea>
+            <div style="width: 100%;">
+                <p style="color: orange; font-size: 11px; margin-left: 12px; margin-top: 12px; margin-bottom: 0;" *ngIf="sending">sending...</p>
+                <p style="color: rgb(74, 209, 74); font-size: 11px; margin-left: 12px; margin-top: 12px; margin-bottom: 0;" *ngIf="sendSuccess">Email send! Thank you :)</p>
+            </div>
+            <button mat-raised-button type="submit" class="submit-btn" [disabled]="sending" >Send message :)</button>
         </form>
     </div>
     <a class="img-up" href="#i-am"><img src="assets/img/goupbtn.svg"></a>

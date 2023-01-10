@@ -1,5 +1,4 @@
-import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -7,22 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  @ViewChild('myForm') myForm!: ElementRef;
+  @ViewChild('nameField') nameField!: ElementRef;
+  @ViewChild('emailField') emailField!: ElementRef;
+  @ViewChild('messageField') messageField!: ElementRef;
+  sending :boolean = false;
+  sendSuccess : boolean = false;
 
-  /*name:string = '';
-  email:string = '';
-  message:string = '';
-  
+  async sendMail(){
+    this.sendSuccess = false;
+    this.sending = true;
+    let fd = new FormData();
+    this.setFormData(fd);
+    await fetch('/send_mail.php', {
+      method: 'POST',
+      body: fd
+    });
+    this.resetInputs();
+    this.sending = false;
+    this.sendSuccess = true;
+  }
 
-  constructor(private http: HttpClient) {}
+  setFormData(fd: FormData){
+    fd.append('name', this.nameField.nativeElement.value);
+    fd.append('email', this.emailField.nativeElement.value);
+    fd.append('message', this.messageField.nativeElement.value);
+  }
 
-  submitForm() {
-    this.http.post("https://www.simon-vitt.de/send_mail.php", formData).subscribe(
-      (response) => {
-        console.log(response);
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
-  }*/
+  resetInputs(){
+    this.nameField.nativeElement.value = '';
+    this.emailField.nativeElement.value = '';
+    this.messageField.nativeElement.value = '';
+  }
 }

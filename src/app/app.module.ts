@@ -17,7 +17,7 @@ import { FlyInLeftDirective } from './directives/fly-in-left.directive';
 import { FlyInRightDirective } from './directives/fly-in-right.directive';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
-import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -42,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    HttpClientModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
