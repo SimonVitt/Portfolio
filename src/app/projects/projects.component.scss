@@ -65,7 +65,7 @@ h3 {
     }
 
     div {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -113,13 +113,31 @@ h3 {
 
 }
 
+.github-links{
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+}
+
+@media (max-width: 1280px) {
+    .project-info div{
+        flex-direction: column;
+        button{
+            margin-top: 12px;
+        }
+    }
+    .github-links{
+        flex-direction: row !important;
+        button{
+            margin-top: 0px;
+        }
+    }
+    
+}
+
+
 @media (max-width: 1170px) {
     .project img {
         height: 372px;
-    }
-
-    .project-info div {
-        width: 100%;
     }
 }
 
@@ -144,7 +162,6 @@ h3 {
     }
 
     .project {
-        height: 300px !important;
         overflow-y: clip;
     }
 
@@ -172,7 +189,7 @@ h3 {
     }
 
     .projects{
-        height: 1755px;
+        height: 2550px;
     }
 
     .polloloco {
@@ -188,6 +205,11 @@ h3 {
     .position-reltive-closer2 {
         position: relative;
         top: -200px;
+    }
+
+    .position-reltive-closer3 {
+        position: relative;
+        top: -300px;
     }
 
     .project-img {
