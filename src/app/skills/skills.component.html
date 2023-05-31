@@ -3,16 +3,12 @@
             class="btn-skills-mobile">Get in touch</button></a>
     <div class="icon-container-skills" appFlyInLeft>
         <div *ngFor="let skill of skills; index as i;" class="single-skill">
-            <img src="{{ skills_images[i] }}">
+            <img src="{{ skills_images[i] }}" style="height: 50px; width: 50px;">
             <span>{{ skills[i] }}</span>
         </div>
         <div class="single-skill">
-            <img src="assets/img/icons/java.svg" style="filter: brightness(0) invert(1); width: 50px;">
+            <img src="assets/img/icons/java.svg" style="filter: brightness(0) invert(1); width: 50px; height: 50px;">
             <span>Java</span>
-        </div>
-        <div class="single-skill">
-            <img src="assets/img/icons/android.png" style="filter: brightness(0) invert(1); width: 60px;">
-            <span>Android Studio</span>
         </div>
     </div>
     <div class="text-container-skills">
